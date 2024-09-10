@@ -1,4 +1,10 @@
+This is the first draft of the project README.md. As more and more information will be added as weeks go on. Please stay online.
+
+This project is open source and available under the MIT License.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+It is created to meet the assignments of class CPRG306 with the objectives to learn on developing an interactive websites through Next.js
 
 ## Getting Started
 
