@@ -36,6 +36,7 @@ export default function Quantity () {
         }
       }  
     }
+    };
     const handleNameChange = (event) => {
         setName(event.target.value);
     };

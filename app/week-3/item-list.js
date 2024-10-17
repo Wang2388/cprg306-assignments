@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import Item from "./item"
 
 export default function ItemList({name, quantity, category}){
@@ -72,6 +75,7 @@ export default function ItemList({name, quantity, category}){
     quantity: 4,
     category: "household",
   };
+  
   return (
     <main className="m-4 text-white bg-slate-950 flex flex-col">
       <h2 className="text-3xl font-bold m-2">Shopping List</h2>

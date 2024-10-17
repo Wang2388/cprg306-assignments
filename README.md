@@ -1,4 +1,4 @@
-This is the first draft of the project README.md. As more and more information will be added as weeks go on. Please stay online.
+This is the first draft of the project README.md. As more and more information will be added as weeks go on. Now, we are in week-5. Please stay online.
 
 This project is open source and available under the MIT License.
 
