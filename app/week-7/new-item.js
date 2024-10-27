@@ -1,19 +1,14 @@
 "use client"
 
-import { useState } from "react"
+import { useState } from "react";
+import React from 'react';
 
-export default function Quantity () {
+export default function NewItem() {
     const [quantity, setQuantity] = useState(1);
     const [flagDisable, setFlagDisabled] = useState(false);
     const [name, setName] = useState("");
     const [category, setCategory] = useState("produce");
      
-    
-    
-    const handleSubmit = (event)=>{
-        event.preventDefault();
-    }
-
     const newPurchase = () => {
             alert(`Added items: ${name}., quantity: ${quantity}, category: ${category}`)
             };
@@ -36,7 +31,7 @@ export default function Quantity () {
         }
       }  
     }
-  
+   
     const handleNameChange = (event) => {
         setName(event.target.value);
     };
@@ -49,9 +44,24 @@ export default function Quantity () {
         setCategory(event.target.value);
     };
 
+    const a = ({ onAddItem }) => {
+        const [name, setName] = useState('');
+        const [quantity, setQuantity] = useState('');
+        const [category, setCategory] = useState('');
+      
+        const handleSubmit = (e) => {
+          e.preventDefault();
+          if (name && quantity && category) {
+            onAddItem(name, quantity, category);
+            setName('');
+            setQuantity('');
+            setCategory('');
+          }
+        };
 
     return (
-        <main className="flex justify-center w-full h-screen bg-black">
+        <main className="flex flex-col justify-start w-full h-300px bg-black">
+            <h2 className="text-3xl font-bold text-white m-4">Shopping List</h2>
             <form onChange={handleSubmit} className = "p-2 m-4 text-black max-w-sm w-full">
                 <div className="mb-2">
                     <input type="text" placeholder="Item name" required="" id="name"  
@@ -94,4 +104,5 @@ export default function Quantity () {
             </form>
         </main>
     );
+}
 }
